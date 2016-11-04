@@ -1,0 +1,35 @@
+@charset "utf-8";
+/* CSS Document */
+
+.dropdown {
+	position:relative;
+	display:inline-block;
+}
+
+.dropdown-content {
+	display: none;
+    position: absolute;
+    background-color: #FFF;  /*Background of the dropdown menu contents*/
+    min-width: 160px;
+	border-radius:5px;       /*Roundness of the drop-down menu corners. If you change this, change the border-radius in ".dropdown-content > a" to the same value.*/
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /*Shadow for drop-down menu. rgba color values scale from 0 to 1. Alpha is transparency. 1 is opaque.*/
+	text-align:center;
+}
+
+.dropdown-content > a {
+	display:block;
+	border-radius:5px;
+	padding:15px;             /*Padding. Adds space between the edges and other links. Decrease if you want less space, and increase if you want more.*/
+	text-decoration:none;
+	color:#000;
+}
+
+.dropdown-content a:hover {background-color: #999} /*Color of the drop-down link mouse is hovering over*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: #3e8e41;
+}
